@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+ }
+
+/* botão Novo (fica no canto direito embaixo) */
+.btn-create {
+  background-color: #0245d8;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 16px;
+  right: 24px;
+  transition: all 0.1s linear 0.1s;
+}
+
+.btn-create:hover {
+  box-shadow: rgba(100, 100, 111,0.2) 0px 7px 0px;
+  transform: scale(1.1);
+}
+
+/* botão Deletar (fica no canto esquerdo embaixo) */
+.btn-delete {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 16px;
+  left: 24px;   /* <- troca pra esquerda */
+  transition: all 0.1s linear 0.1s;
+}
+
+.btn-delete:hover {
+  box-shadow: rgba(100, 100, 111,0.2) 0px 7px 0px;
+  transform: scale(1.1);
+}
+
